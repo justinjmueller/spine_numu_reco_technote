@@ -1,0 +1,4 @@
+*.gz
+*.bbl
+*.DS_Store
+*.pyc

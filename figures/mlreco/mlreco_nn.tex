@@ -1,0 +1,13 @@
+\begin{tabular}{ccccc}
+    \toprule
+    Stage & Type & Description \\
+    \midrule
+    UResNet Deghost & CNN & Classification of space points as reconstruction artifacts or real charge depositions \\
+    UResNet & CNN & Semantic segmentation (voxel-level classification of activity) \\
+    PPN & CNN & Prediction of start/end points of showers/tracks \\
+    Graph-SPICE & CNN & Coarse clustering of space points into particle fragments \\
+    GrapPA-Shower & GNN & Clustering of shower fragments into complete showers \\
+    GrapPA-Track & GNN & Clustering of track fragments into complete tracks \\
+    GrapPA-Interaction & GNN & Clustering of particles into complete interactions with PID and primary designation \\
+    \bottomrule
+\end{tabular}
