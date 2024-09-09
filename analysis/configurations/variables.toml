@@ -1,0 +1,103 @@
+[variables.visible_energy]
+var = 'visible_energy'
+bins = [25, 0, 3000]
+ylim = {'1mu1p' = [0, 35], '1muNp' = [0, 50], '1muX' = [0, 70]}
+ylim_norm = [3.75, 20.0]
+legend_ncol = 1
+xlabel = 'Visible Energy [MeV]'
+
+[variables.muon_ke]
+var = 'muon_ke'
+bins = [25, 0, 2000]
+ylim = {'1mu1p' = [0, 40], '1muNp' = [0, 60], '1muX' = [0, 80]}
+ylim_norm = [3.5, 20.0]
+legend_ncol = 1
+xlabel = 'Muon Kinetic Energy [MeV]'
+
+[variables.proton_ke]
+var = 'proton_ke'
+bins = [25, 0, 600]
+ylim = {'1mu1p' = [0, 35], '1muNp' = [0, 50], '1muX' = [0, 70]}
+ylim_norm = [5.0, 20.0]
+legend_ncol = 1
+xlabel = 'Proton Kinetic Energy [MeV]'
+
+[variables.muon_pt]
+var = 'muon_pt'
+bins = [25, 0, 750]
+ylim = {'1mu1p' = [0, 35], '1muNp' = [0, 50], '1muX' = [0, 70]}
+ylim_norm = [5.0, 20.0]
+legend_ncol = 2
+xlabel = 'Muon Transverse Momentum [MeV/c]'
+
+[variables.proton_pt]
+var = 'proton_pt'
+bins = [25, 0, 750]
+ylim = {'1mu1p' = [0, 35], '1muNp' = [0, 50], '1muX' = [0, 70]}
+ylim_norm = [5.0, 20.0]
+legend_ncol = 2
+xlabel = 'Proton Transverse Momentum [MeV/c]'
+
+[variables.muon_polar_angle]
+var = 'muon_polar_angle'
+bins = [25.0, 0.0, 3.14159]
+ylim = {'1mu1p' = [0, 35], '1muNp' = [0, 50], '1muX' = [0, 70]}
+ylim_norm = [6.0, 20.0]
+legend_ncol = 1
+xlabel = 'Muon Polar Angle [rad.]'
+
+[variables.muon_azimuthal_angle]
+var = 'muon_azimuthal_angle'
+bins = [25.0, 0.0, 3.14159]
+ylim = {'1mu1p' = [0, 35], '1muNp' = [0, 50], '1muX' = [0, 70]}
+ylim_norm = [7.0, 20.0]
+legend_ncol = 1
+xlabel = 'Muon Azimuthal Angle [rad.]'
+
+[variables.opening_angle]
+var = 'opening_angle'
+bins = [25.0, 0.0, 3.14159]
+ylim = {'1mu1p' = [0, 20], '1muNp' = [0, 30], '1muX' = [0, 50]}
+ylim_norm = [5.5, 20.0]
+legend_ncol = 2
+xlabel = '$\theta_{\mu p}$ [rad.]'
+
+[variables.delta_pT]
+var = 'delta_pT'
+bins = [25, 0, 1200]
+ylim = {'1mu1p' = [0, 35], '1muNp' = [0, 50], '1muX' = [0, 70]}
+ylim_norm = [5.0, 20.0]
+legend_ncol = 1
+xlabel = '$\delta p_T$ [MeV/c]'
+
+[variables.delta_phiT]
+var = 'delta_phiT'
+bins = [25.0, 0.0, 3.14159]
+ylim = {'1mu1p' = [0, 35], '1muNp' = [0, 50], '1muX' = [0, 70]}
+ylim_norm = [3.5, 20.0]
+legend_ncol = 1
+xlabel = '$\delta \phi_T$ [rad.]'
+
+[variables.delta_alphaT]
+var = 'delta_alphaT'
+bins = [25.0, 0.0, 3.14159]
+ylim = {'1mu1p' = [0, 35], '1muNp' = [0, 50], '1muX' = [0, 70]}
+ylim_norm = [7.0, 20.0]
+legend_ncol = 1
+xlabel = '$\delta \alpha_T$ [rad.]'
+
+[variables.muon_softmax]
+var = 'muon_softmax'
+bins = [25, 0, 1]
+ylim = {'1mu1p' = [0, 20], '1muNp' = [0, 30], '1muX' = [0, 50]}
+ylim_norm = [2.5, 20.0]
+legend_ncol = 2
+xlabel = 'Muon Softmax Score'
+
+[variables.proton_softmax]
+var = 'proton_softmax'
+bins = [25.0, 0.80, 1.0]
+ylim = {'1mu1p' = [0, 200], '1muNp' = [0, 300], '1muX' = [0, 500]}
+ylim_norm = [1.0, 25.0]
+legend_ncol = 1
+xlabel = 'Proton Softmax Score'

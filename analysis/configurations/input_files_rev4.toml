@@ -1,0 +1,69 @@
+[exposure]
+montecarlo = 2.09199e+20
+nuonlymc = 1.72821e20
+data = 1.89986e+19
+onbeam_events = 157474
+offbeam_events = 266267
+onbeam_rate = 0.0309638
+offbeam_rate = 0.0240737
+
+[input_files]
+data = '/Users/mueller/data/thesis_data/collonly/data_onbeam.log'
+offbeam = '/Users/mueller/data/thesis_data/output_offbeam_crtpmt.log'
+offbeam_matches = '/Users/mueller/data/thesis_data/offbeam_matches.csv'
+offbeam_root = '/Users/mueller/data/thesis_data/spectra_data_offbeam.root'
+simulation = '/Users/mueller/data/thesis_data/collonly/montecarlo.log'
+simulation_root = '/Users/mueller/data/thesis_data/spectra_mc_v09_84_00_01r3.root'
+
+[input_files.detsys]
+exposure = 'nuonlymc'
+1mu1p = '/Users/mueller/data/thesis_data/collonly/covariances_1mu1p.npz'
+1muNp = '/Users/mueller/data/thesis_data/collonly/covariances_1muNp.npz'
+1muX = '/Users/mueller/data/thesis_data/collonly/covariances_1muX.npz'
+
+[input_files.multisim]
+exposure = 'montecarlo'
+1mu1p = '/Users/mueller/data/thesis_data/multisim_covariances_1mu1p.npz'
+1muNp = '/Users/mueller/data/thesis_data/multisim_covariances_1muNp.npz'
+1muX = '/Users/mueller/data/thesis_data/multisim_covariances_1muX.npz'
+
+[header]
+run = 'reco'
+event = 'reco'
+subrun = 'reco'
+nu_id = 'truth'
+image_id = 'reco'
+id = 'reco'
+trigger = 'truth'
+category = 'truth'
+category_topology = 'truth'
+category_interaction_mode = 'truth'
+true_muon_ke = 'truth'
+reco_muon_ke = 'reco'
+true_proton_ke = 'truth'
+reco_proton_ke = 'reco'
+true_visible_energy = 'truth'
+reco_visible_energy = 'reco'
+true_muon_pt = 'truth'
+reco_muon_pt = 'reco'
+true_proton_pt = 'truth'
+reco_proton_pt = 'reco'
+true_muon_polar_angle = 'truth'
+reco_muon_polar_angle = 'reco'
+true_muon_azimuthal_angle = 'truth'
+reco_muon_azimuthal_angle = 'reco'
+true_opening_angle = 'truth'
+reco_opening_angle = 'reco'
+true_delta_pT = 'truth'
+reco_delta_pT = 'reco'
+true_delta_phiT = 'truth'
+reco_delta_phiT = 'reco'
+true_delta_alphaT = 'truth'
+reco_delta_alphaT = 'reco'
+muon_softmax = 'reco'
+proton_softmax = 'reco'
+selected_1mu1p = 'reco'
+selected_1muNp = 'reco'
+selected_1muX = 'reco'
+crtpmt_match = 'reco'
+cryostat = 'reco'

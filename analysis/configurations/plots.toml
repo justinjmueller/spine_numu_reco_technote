@@ -1,0 +1,185 @@
+[plots.datamc_hist1d_1mu1p]
+channel = '1mu1p'
+type = 'selected'
+data = true
+watermark = {text = '$\bf{ICARUS}$ Work in Progress'}
+second_axis = 'datamc_ratio'
+systematic = ['total', 'Total MC Uncertainty']
+categorical_var = 'category_topology'
+categories = ['1$\mathrm{\mu}$1p', 'Other $\nu_\mathrm{\mu}$ CC', '', '', '', '$\nu$ NC', 'Cosmic', '']
+merge = [[0,], [1,2,3,4,7], [5,], [6,]]
+colors = [0, 1, 3, 4]
+ylabel = 'Entries'
+title = 'Selected 1$\mathrm{\mu}$1p Candidates'
+show_percentage = true
+plot_kwargs = {histtype = 'barstacked'}
+
+[plots.datamc_hist1d_1muNp]
+channel = '1muNp'
+type = 'selected'
+data = true
+watermark = {text = '$\bf{ICARUS}$ Work in Progress'}
+second_axis = 'datamc_ratio'
+systematic = ['total', 'Total MC Uncertainty']
+categorical_var = 'category_topology'
+categories = ['1$\mathrm{\mu}$Np', 'Other $\nu_\mathrm{\mu}$ CC', '', '', '', '$\nu$ NC', 'Cosmic', '']
+merge = [[0,2], [1,3,4,7], [5,], [6,]]
+colors = [0, 1, 3, 4]
+ylabel = 'Entries'
+title = 'Selected 1$\mathrm{\mu}$Np Candidates'
+show_percentage = true
+plot_kwargs = {histtype = 'barstacked'}
+
+[plots.datamc_hist1d_1muX]
+channel = '1muX'
+type = 'selected'
+watermark = {text = '$\bf{ICARUS}$ Work in Progress'}
+data = true
+second_axis = 'datamc_ratio'
+systematic = ['total', 'Total MC Uncertainty']
+categorical_var = 'category'
+categories = ['$\nu_\mathrm{\mu}$ CC', 'Other $\nu$', '1$\mathrm{\mu}$Np, N$>$1', '1$\mathrm{\mu}$Np, N$>$1 (Non-signal)', '$\nu_\mathrm{\mu}$ CC', '$\nu_\mathrm{\mu}$ CC (Non-signal)', 'Other $\nu$', 'Cosmic']
+merge = [[0, 2, 4,], [1, 3, 5, 6], [7,]]
+colors = [0, 1, 4]
+ylabel = 'Entries'
+title = 'Selected $\mathrm{\nu_\mu}$ CC Candidates'
+show_percentage = true
+plot_kwargs = {histtype = 'barstacked'}
+
+[plots.systematics_hist1d_1mu1p]
+channel = '1mu1p'
+type = 'selected'
+watermark = {text = '$\bf{ICARUS}$ Simulation Work in Progress'}
+second_axis = 'systematics'
+systematic = ['flux', 'Total Flux Uncertainty']
+categorical_var = 'category_topology'
+categories = ['1$\mathrm{\mu}$1p', 'Other $\nu_\mathrm{\mu}$ CC', '', '', '', '$\nu$ NC', 'Cosmic', '']
+merge = [[0,], [1,2,3,4,7], [5,], [6,]]
+colors = [0, 1, 3, 4]
+ylabel = 'Entries'
+title = 'Selected 1$\mathrm{\mu}$1p Candidates'
+show_percentage = true
+plot_kwargs = {histtype = 'barstacked'}
+
+[plots.systematics_hist1d_1muNp]
+channel = '1muNp'
+type = 'selected'
+watermark = {text = '$\bf{ICARUS}$ Simulation Work in Progress'}
+second_axis = 'systematics'
+systematic = ['flux', 'Total Flux Uncertainty']
+categorical_var = 'category'
+categories = ['1$\mathrm{\mu}$Np', 'Other $\nu_\mathrm{\mu}$ CC', '', '', '', '$\nu$ NC', 'Cosmic', '']
+merge = [[0,2], [1,3,4,7], [5,], [6,]]
+colors = [0, 1, 3, 4]
+ylabel = 'Entries'
+title = 'Selected 1$\mathrm{\mu}$Np Candidates'
+show_percentage = true
+plot_kwargs = {histtype = 'barstacked'}
+
+[plots.systematics_hist1d_1muX]
+channel = '1muX'
+type = 'selected'
+watermark = {text = '$\bf{ICARUS}$ Simulation Work in Progress'}
+second_axis = 'systematics'
+systematic = ['flux', 'Total Flux Uncertainty']
+categorical_var = 'category'
+categories = ['$\nu_\mathrm{\mu}$ CC', 'Other $\nu$', '1$\mathrm{\mu}$Np, N$>$1', '1$\mathrm{\mu}$Np, N$>$1 (Non-signal)', '$\nu_\mathrm{\mu}$ CC', '$\nu_\mathrm{\mu}$ CC (Non-signal)', 'Other $\nu$', 'Cosmic']
+merge = [[0, 2, 4,], [1, 3, 5, 6], [7,]]
+colors = [0, 1, 4]
+ylabel = 'Entries'
+title = 'Selected $\mathrm{\nu_\mu}$ CC Candidates'
+show_percentage = true
+plot_kwargs = {histtype = 'barstacked'}
+
+[plots.selected_hist1d_1mu1p]
+channel = '1mu1p'
+type = 'selected'
+watermark = {text = '$\bf{ICARUS}$ Simulation Work in Progress'}
+second_axis = 'pureff'
+categorical_var = 'category_topology'
+categories = ['1$\mathrm{\mu}$1p', 'Other $\nu_\mathrm{\mu}$ CC', '', '', '', '$\nu$ NC', 'Cosmic', '']
+merge = [[0,], [1,2,3,4,7], [5,], [6,]]
+colors = [0, 1, 3, 4]
+ylabel = 'Entries'
+title = 'Selected 1$\mathrm{\mu}$1p Candidates'
+show_percentage = true
+plot_kwargs = {histtype = 'barstacked'}
+
+[plots.selected_hist1d_1muNp]
+channel = '1muNp'
+type = 'selected'
+watermark = {text = '$\bf{ICARUS}$ Simulation Work in Progress'}
+second_axis = 'pureff'
+categorical_var = 'category_topology'
+categories = ['1$\mathrm{\mu}$Np', 'Other $\nu_\mathrm{\mu}$ CC', '', '', '', '$\nu$ NC', 'Cosmic', '']
+merge = [[0,2], [1,3,4,7], [5,], [6,]]
+colors = [0, 1, 3, 4]
+ylabel = 'Entries'
+title = 'Selected 1$\mathrm{\mu}$Np Candidates'
+show_percentage = true
+plot_kwargs = {histtype = 'barstacked'}
+
+[plots.selected_hist1d_1muX]
+channel = '1muX'
+type = 'selected'
+watermark = {text = '$\bf{ICARUS}$ Simulation Work in Progress'}
+second_axis = 'pureff'
+categorical_var = 'category'
+categories = ['$\nu_\mathrm{\mu}$ CC', 'Other $\nu$', '1$\mathrm{\mu}$Np, N$>$1', '1$\mathrm{\mu}$Np, N$>$1 (Non-signal)', '$\nu_\mathrm{\mu}$ CC', '$\nu_\mathrm{\mu}$ CC (Non-signal)', 'Other $\nu$', 'Cosmic']
+merge = [[0, 2, 4,], [1, 3, 5, 6], [7,]]
+colors = [0, 1, 4]
+ylabel = 'Entries'
+title = 'Selected $\mathrm{\nu_\mu}$ CC Candidates'
+show_percentage = true
+plot_kwargs = {histtype = 'barstacked'}
+
+[plots.signal_hist1d_1mu1p]
+channel = '1mu1p'
+type = 'signal'
+watermark = {text = '$\bf{ICARUS}$ Simulation Work in Progress'}
+categorical_var = 'category_interaction_mode'
+categories = ['$\nu_\mu$ CC QE', '$\nu_\mu$ CC Res', '$\nu_\mu$ CC MEC', '$\nu_\mu$ CC DIS']
+merge = [[0,], [1,], [2,], [3,]]
+colors = [0, 1, 2, 3]
+ylabel = 'Entries'
+title = '1$\mathrm{\mu}$1p'
+show_percentage = true
+plot_kwargs = {histtype = 'barstacked'}
+
+[plots.signal_hist1d_1muNp]
+channel = '1muNp'
+type = 'signal'
+watermark = {text = '$\bf{ICARUS}$ Simulation Work in Progress'}
+categorical_var = 'category_interaction_mode'
+categories = ['$\nu_\mu$ CC QE', '$\nu_\mu$ CC Res', '$\nu_\mu$ CC MEC', '$\nu_\mu$ CC DIS']
+merge = [[0,], [1,], [2,], [3,]]
+colors = [0, 1, 2, 3]
+ylabel = 'Entries'
+title = '1$\mathrm{\mu}$Np'
+show_percentage = true
+plot_kwargs = {histtype = 'barstacked'}
+
+[plots.signal_hist1d_1muX]
+channel = '1muX'
+type = 'signal'
+watermark = {text = '$\bf{ICARUS}$ Simulation Work in Progress'}
+categorical_var = 'category_interaction_mode'
+categories = ['$\nu_\mu$ CC QE', '$\nu_\mu$ CC Res', '$\nu_\mu$ CC MEC', '$\nu_\mu$ CC DIS', '$\nu_\mu$ CC COH']
+merge = [[0,], [1,], [2,], [3,], [4,]]
+colors = [0, 1, 2, 3, 4]
+ylabel = 'Entries'
+title = '$\mathrm{\nu_\mu}$ CC'
+show_percentage = true
+plot_kwargs = {histtype = 'barstacked'}
+
+[plots.matrix_hist2d_1mu1p]
+channel = '1mu1p'
+correlation = true
+
+[plots.matrix_hist2d_1muNp]
+channel = '1muNp'
+correlation = true
+
+[plots.matrix_hist2d_1muX]
+channel = '1muX'
+correlation = true

@@ -1,0 +1,8 @@
+[table_purity_efficiency]
+cut_labels = ['No Cut', 'Fiducial Volume', 'Containment', 'Final State', 'Flash Time', 'CRT Veto']
+[table_purity_efficiency.1mu1p]
+signal_bins = [0,]
+[table_purity_efficiency.1muNp]
+signal_bins = [0,2]
+[table_purity_efficiency.1muX]
+signal_bins = [0,2,4]
